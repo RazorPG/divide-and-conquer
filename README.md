@@ -2,24 +2,22 @@
 
 ### Visual Overview
 
-<div style="display: flex; justify-content: space-around; align-items: center;">
-
-<div style="text-align: center;">
-<img src="./assets/merge_sort_diagram.png" alt="Merge Sort" width="200">
-<p><strong>Merge Sort</strong></p>
-</div>
-
-<div style="text-align: center;">
-<img src="./assets/quick_sort_diagram.png" alt="Quick Sort" width="200">
-<p><strong>Quick Sort</strong></p>
-</div>
-
-<div style="text-align: center;">
-<img src="./assets/bst_diagram.png" alt="Binary Search Tree" width="200">
-<p><strong>Binary Search Tree</strong></p>
-</div>
-
-</div>
+<table>
+  <tr>
+    <td align="center">
+      <img src="./assets/merge_sort_diagram.png" width="200"><br>
+      <strong>Merge Sort</strong>
+    </td>
+    <td align="center">
+      <img src="./assets/quick_sort_diagram.png" width="200"><br>
+      <strong>Quick Sort</strong>
+    </td>
+    <td align="center">
+      <img src="./assets/bst_diagram.png" width="200"><br>
+      <strong>Binary Search Tree</strong>
+    </td>
+  </tr>
+</table>
 
 Repositori ini menunjukkan implementasi dan perbandingan waktu eksekusi dari algoritma berbasis strategi **Divide and Conquer**, yaitu:
 
