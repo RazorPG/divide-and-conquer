@@ -59,9 +59,9 @@ countTimeExecution(
 // countTimeExecution('merge sort', mergeSort, data6, '\nTESTING DATA 1000000')
 // countTimeExecution('quick sort', quickSort, data6)
 
-// const bst = new BinarySearchTree()
-// const values = [3, 10, 12, 5, 7, 15]
-// values.forEach(value => bst.insert(value))
+const bst = new BinarySearchTree()
+const values = [3, 10, 12, 5, 7, 15]
+values.forEach(value => bst.insert(value))
 
-// console.log(bst.printInOrder())
-// console.log(bst.search(5))
+console.log(bst.printInOrder())
+console.log(bst.search(5))

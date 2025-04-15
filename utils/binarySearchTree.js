@@ -35,7 +35,7 @@ class BinarySearchTree {
 
   _searchNode(node, target) {
     if (node === null) {
-      return 'target tidak ditemukan'
+      return -1
     } else if (node.data === target) {
       return target
     } else if (target < node.data) {
