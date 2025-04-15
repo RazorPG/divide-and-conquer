@@ -6,7 +6,7 @@ function createFileJson(name, length, propertyName) {
   const data = Array.from({ length }, () =>
     parseInt(Math.random() * length + 1)
   )
-  const dataFilePath = path.join(__dirname, name)
+  const dataFilePath = path.join(process.cwd(), name)
 
   let existingData = {}
 
@@ -25,7 +25,7 @@ function createFileJson(name, length, propertyName) {
 
 // membaca file json
 function readFileJson(file, nameRow) {
-  const filePath = path.join(__dirname, file)
+  const filePath = path.join(process.cwd(), file)
   const rowData = fs.readFileSync(filePath)
   const parseData = JSON.parse(rowData)
   return parseData[nameRow]

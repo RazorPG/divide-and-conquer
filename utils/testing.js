@@ -1,7 +1,7 @@
-function countTimeExecution(name, fn, data, title = '') {
+function countTimeExecution(name, title = '', fn, ...param) {
   if (title) console.log(title)
   console.time(name)
-  console.log(fn(data))
+  console.log(fn(...param))
   console.timeEnd(name)
 }
 

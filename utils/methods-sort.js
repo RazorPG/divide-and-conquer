@@ -1,27 +1,34 @@
-function quickSort(data, reverse = false) {
+function quickSort(data, reverse = false, pivot = 'start') {
   if (data.length <= 1) {
     return data
   }
-  const start = data[0]
+  const start = 0
   const mid = Math.floor(data.length / 2)
   const end = data.length - 1
+  const median = [data[start], data[mid], data[end]].sort((a, b) => a - b)[1]
 
-  const pivot = [start, mid, end].sort((a, b) => a - b)[1]
-
+  const pivotIndex =
+    pivot == 'start'
+      ? start
+      : pivot == 'mid'
+      ? mid
+      : pivot == 'end'
+      ? end
+      : median
   const left = [],
     right = []
 
   for (let i = 0; i < data.length; i++) {
-    if (i == pivot) {
+    if (i == pivotIndex) {
       continue
     } else if (!reverse) {
-      if (data[i] <= data[pivot]) {
+      if (data[i] <= data[pivotIndex]) {
         left.push(data[i])
       } else {
         right.push(data[i])
       }
     } else {
-      if (data[i] > data[pivot]) {
+      if (data[i] > data[pivotIndex]) {
         left.push(data[i])
       } else {
         right.push(data[i])
@@ -30,7 +37,7 @@ function quickSort(data, reverse = false) {
   }
   return [
     ...quickSort(left, reverse),
-    data[pivot],
+    data[pivotIndex],
     ...quickSort(right, reverse),
   ]
 }
