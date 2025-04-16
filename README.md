@@ -120,14 +120,20 @@ console.log(bst.search(5))
 
 ## ▶️ Cara Menjalankan
 
-1. Clone repositori:
+1. Unduh dan instal Node.js:
+
+- Kunjungi [situs resmi Node.js](https://nodejs.org/).
+- Unduh versi LTS (Long Term Support) untuk stabilitas.
+- Ikuti petunjuk instalasi sesuai sistem operasi Anda.
+
+2. Clone repositori:
 
 ```bash
 git clone https://github.com/your-username/divide-and-conquer.git
 cd divide-and-conquer
 ```
 
-2. Jalankan benchmark atau pengujian:
+3. Jalankan benchmark atau pengujian:
 
 ```bash
 node main.js
